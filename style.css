@@ -14,16 +14,25 @@ body {
 
 .container {
   display: grid;
-  grid-template: repeat(2,200px) / repeat(5,150px);
+  grid-template: repeat(2,250px) / repeat(5,180px);
+  grid-gap : 10px;
   justify-content: center;
   width: 80%;
   margin: 2em auto;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .container div {
-  border: 1px solid black;
+  border-radius: 20px;
   font-size: 80px;
-  line-height: 200px;
+  line-height: 250px;
   text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.fond  {
+  background:navy;
+  color: transparent;
+  /*On empeche la triche en selectionnant les element pour les voir*/
+  user-select: none; 
 }
