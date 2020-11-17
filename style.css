@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(2,200px) / repeat(5,150px);
+  justify-content: center;
+  width: 80%;
+  margin: 2em auto;
+  margin-top: 150px;
+}
+
+.container div {
+  border: 1px solid black;
+  font-size: 80px;
+  line-height: 200px;
+  text-align: center;
+}
