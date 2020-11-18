@@ -5,21 +5,35 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #4158D0;
+  /*-- FOND --*/
+  background-color: #4158d0;
   background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-size: 100% 100%;
+  /*On empeche la triche en selectionnant les element pour les voir*/
+  user-select: none;
+}
+
+.nbrEssai {
+  background-color: navy;
+  color:white;
+  font-size: 25px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin:30px auto;
+  border-radius: 15px;
 }
 
 .container {
   display: grid;
-  grid-template: repeat(2,250px) / repeat(5,180px);
-  grid-gap : 10px;
+  grid-template: repeat(2, 250px) / repeat(5, 180px);
+  grid-gap: 10px;
   justify-content: center;
   width: 80%;
   margin: 2em auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .container div {
@@ -28,11 +42,20 @@ body {
   line-height: 250px;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
-.fond  {
-  background:navy;
+.fond {
+  background-color: navy;
   color: transparent;
-  /*On empeche la triche en selectionnant les element pour les voir*/
-  user-select: none; 
+  transition :all 300ms;
+}
+
+.face {
+  background-color : white;
+  transition : all 600ms;
+}
+
+.check {
+  visibility: hidden;
 }
